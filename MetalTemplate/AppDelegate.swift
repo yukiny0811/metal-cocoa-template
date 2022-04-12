@@ -6,15 +6,26 @@
 //
 
 import Cocoa
+import Metal
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    public let device = MTLCreateSystemDefaultDevice()!
+    public lazy var library: MTLLibrary = {
+        return self.device.makeDefaultLibrary()!
+    }()
+    public lazy var commandQueue: MTLCommandQueue = {
+        return self.device.makeCommandQueue()!
+    }()
     
+    func applicationWillFinishLaunching(_ notification: Notification) {
+        print("bbb")
+    }
 
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        print("ccc")
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

@@ -11,6 +11,9 @@
 		BB91F6E327FE76CD0070E7BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB91F6E227FE76CD0070E7BC /* ViewController.swift */; };
 		BB91F6E527FE76CF0070E7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB91F6E427FE76CF0070E7BC /* Assets.xcassets */; };
 		BB91F6E827FE76CF0070E7BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB91F6E627FE76CF0070E7BC /* Main.storyboard */; };
+		BB91F6F227FE77DA0070E7BC /* YuruAbstractRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB91F6F127FE77DA0070E7BC /* YuruAbstractRenderer.swift */; };
+		BB91F6F427FE783A0070E7BC /* YuruMainRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB91F6F327FE783A0070E7BC /* YuruMainRenderer.swift */; };
+		BB91F6F627FE9DFB0070E7BC /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = BB91F6F527FE9DFB0070E7BC /* Shader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		BB91F6E427FE76CF0070E7BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB91F6E727FE76CF0070E7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB91F6E927FE76CF0070E7BC /* MetalTemplate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetalTemplate.entitlements; sourceTree = "<group>"; };
+		BB91F6F127FE77DA0070E7BC /* YuruAbstractRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuruAbstractRenderer.swift; sourceTree = "<group>"; };
+		BB91F6F327FE783A0070E7BC /* YuruMainRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuruMainRenderer.swift; sourceTree = "<group>"; };
+		BB91F6F527FE9DFB0070E7BC /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,11 @@
 		BB91F6DF27FE76CD0070E7BC /* MetalTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				BB91F6F527FE9DFB0070E7BC /* Shader.metal */,
 				BB91F6E027FE76CD0070E7BC /* AppDelegate.swift */,
 				BB91F6E227FE76CD0070E7BC /* ViewController.swift */,
+				BB91F6F127FE77DA0070E7BC /* YuruAbstractRenderer.swift */,
+				BB91F6F327FE783A0070E7BC /* YuruMainRenderer.swift */,
 				BB91F6E427FE76CF0070E7BC /* Assets.xcassets */,
 				BB91F6E627FE76CF0070E7BC /* Main.storyboard */,
 				BB91F6E927FE76CF0070E7BC /* MetalTemplate.entitlements */,
@@ -131,7 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB91F6F627FE9DFB0070E7BC /* Shader.metal in Sources */,
 				BB91F6E327FE76CD0070E7BC /* ViewController.swift in Sources */,
+				BB91F6F227FE77DA0070E7BC /* YuruAbstractRenderer.swift in Sources */,
+				BB91F6F427FE783A0070E7BC /* YuruMainRenderer.swift in Sources */,
 				BB91F6E127FE76CD0070E7BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
